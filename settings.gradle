@@ -1,1 +1,1 @@
-include ':applyvolunteer', ':app', ':base', ':instantapp'
+include ':applyvolunteer', ':installed', ':base', ':instantapp'

@@ -66,9 +66,6 @@ class ApplyActivity : AppCompatActivity(), LoaderCallbacks<Cursor> {
         return false
     }
 
-    /**
-     * Callback received when a permissions request has been completed.
-     */
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>,
                                             grantResults: IntArray) {
         if (requestCode == REQUEST_READ_CONTACTS) {

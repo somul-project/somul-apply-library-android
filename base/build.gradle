@@ -1,13 +1,19 @@
 apply plugin: 'com.android.feature'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
 
 android {
-    compileSdkVersion 26
     baseFeature true
+
+    compileSdkVersion rootProject.compileSdk
+    buildToolsVersion rootProject.buildTools
+
     defaultConfig {
-        minSdkVersion 23
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion rootProject.minSdk
+        targetSdkVersion rootProject.compileSdk
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
     }
     buildTypes {
         release {
@@ -18,8 +24,10 @@ android {
 }
 
 dependencies {
-    api 'com.android.support:appcompat-v7:26.1.0'
-    api 'com.android.support:design:26.1.0'
-    application project(':app')
-    feature project(':applyvolunteer')
+    application project(':installed')
+
+    api "com.android.support:appcompat-v7:$supportLib"
+    api "com.android.support:design:$supportLib"
+    api "com.google.android.instantapps:instantapps:$instantAppsVer"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
