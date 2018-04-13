@@ -28,7 +28,7 @@ task clean(type: Delete) {
 }
 
 ext {
-    applicationId = "com.asuscomm.yangyinetwork.somul_apply_library_android"
+    applicationId = "com.asuscomm.yangyinetwork.somulapplylibraryandroid"
     buildTools = '27.0.2'
     compileSdk = 27
     minSdk = 15

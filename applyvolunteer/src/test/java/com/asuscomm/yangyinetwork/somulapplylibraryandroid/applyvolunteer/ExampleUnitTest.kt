@@ -1,4 +1,4 @@
-package com.asuscomm.yangyinetwork.somul_apply_library_android.applyvolunteer
+package com.asuscomm.yangyinetwork.somulapplylibraryandroid.applyvolunteer
 
 import org.junit.Test
 

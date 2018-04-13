@@ -1,4 +1,4 @@
-package com.asuscomm.yangyinetwork.somul_apply_library_android.applyvolunteer.base
+package com.asuscomm.yangyinetwork.somulapplylibraryandroid.applyvolunteer.base
 
 import java.util.*
 
@@ -6,7 +6,7 @@ import java.util.*
  * Created by jaeyeong on 13/04/2018.
  */
 
-data class Voluteer(
+data class VolunteerDto(
         var id: Int,
         var name: String,
         var email: String,

@@ -1,4 +1,4 @@
-package com.asuscomm.yangyinetwork.somul_apply_library_android.applyvolunteer
+package com.asuscomm.yangyinetwork.somulapplylibraryandroid.applyvolunteer
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.asuscomm.yangyinetwork.somul_apply_library_android.applyvolunteer.test", appContext.packageName)
+        assertEquals("com.asuscomm.yangyinetwork.somulapplylibraryandroid.applyvolunteer.test", appContext.packageName)
     }
 }

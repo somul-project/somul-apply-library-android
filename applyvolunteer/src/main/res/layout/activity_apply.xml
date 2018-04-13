@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.asuscomm.yangyinetwork.somul_apply_library_android.applyvolunteer.ApplyActivity">
+    tools:context="com.asuscomm.yangyinetwork.somulapplylibraryandroid.applyvolunteer.ApplyActivity">
 
     <!-- Login progress -->
     <ProgressBar
