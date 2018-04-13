@@ -3,17 +3,17 @@ package com.asuscomm.yangyinetwork.somulapplylibraryandroid.applyvolunteer
 
 import android.content.Context
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.asuscomm.yangyinetwork.somulapplylibraryandroid.applyvolunteer.base.debug.Log
+import com.asuscomm.yangyinetwork.somulapplylibraryandroid.applyvolunteer.base.ui.BaseFragment
 
 /**
  * Created by jaeyeong on 13/04/2018.
  */
 
-class SelectLibraryFragment: Fragment() {
+class SelectLibraryFragment: BaseFragment() {
     companion object {
         fun newInstance(): SelectLibraryFragment {
             return SelectLibraryFragment()

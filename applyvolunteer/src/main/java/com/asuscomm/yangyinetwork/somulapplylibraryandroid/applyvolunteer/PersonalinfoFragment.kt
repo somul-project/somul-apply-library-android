@@ -2,20 +2,20 @@ package com.asuscomm.yangyinetwork.somulapplylibraryandroid.applyvolunteer
 
 import android.content.Context
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.asuscomm.yangyinetwork.somulapplylibraryandroid.applyvolunteer.base.Volunteer
 import com.asuscomm.yangyinetwork.somulapplylibraryandroid.applyvolunteer.base.debug.Log
+import com.asuscomm.yangyinetwork.somulapplylibraryandroid.applyvolunteer.base.ui.BaseFragment
 import kotlinx.android.synthetic.main.fragment_personalnfo.view.*
 
 /**
  * Created by jaeyeong on 13/04/2018.
  */
 
-class PersonalinfoFragment: Fragment() {
+class PersonalinfoFragment: BaseFragment() {
     companion object {
         fun newInstance(): PersonalinfoFragment {
             return PersonalinfoFragment()
@@ -48,7 +48,7 @@ class PersonalinfoFragment: Fragment() {
         }
     }
 
-    fun saveVolunteerInfoAndGoNext() {
+    private fun saveVolunteerInfoAndGoNext() {
         Log.d()
 
         if (saveVolunteer()) {
