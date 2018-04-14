@@ -233,7 +233,5 @@
             android:text="다음"
             />
 
-
-
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

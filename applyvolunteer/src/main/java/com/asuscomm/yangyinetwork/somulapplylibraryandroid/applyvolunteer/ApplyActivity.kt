@@ -12,7 +12,7 @@ class ApplyActivity : BaseFragmentActivity(), ApplyNavigator {
     private lateinit var mVolunteerBuilder: Volunteer.Builder
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Log.d()
+        Log.d("Initialize ")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_apply)
     }
@@ -29,12 +29,12 @@ class ApplyActivity : BaseFragmentActivity(), ApplyNavigator {
 
     // region ApplyNavigator
     override fun savePersonalInfo(volunteerBuilder: Volunteer.Builder) {
-        Log.d()
+        Log.d("Initialize ")
         mVolunteerBuilder = volunteerBuilder
     }
 
     override fun gotoSelectLibraryFragment() {
-        Log.d()
+        Log.d("Initialize ")
         val newFragment = SelectLibraryFragment.newInstance()
         gotoFragment(newFragment, true)
     }

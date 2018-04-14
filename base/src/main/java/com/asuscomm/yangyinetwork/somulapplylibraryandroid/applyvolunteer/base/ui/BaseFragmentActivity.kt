@@ -13,7 +13,7 @@ abstract class BaseFragmentActivity: AppCompatActivity() {
     abstract fun getContentFrameId(): Int
 
     override fun onBackPressed() {
-        Log.d()
+        Log.d("Initialize ")
         val fragment = supportFragmentManager.findFragmentById(getContentFrameId())
 
         var consumed = false
@@ -34,7 +34,7 @@ abstract class BaseFragmentActivity: AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Log.d()
+        Log.d("Initialize ")
         super.onCreate(savedInstanceState)
 
         val savedFragment = supportFragmentManager.findFragmentById(getContentFrameId())
@@ -44,7 +44,7 @@ abstract class BaseFragmentActivity: AppCompatActivity() {
     }
 
     fun initFragment() {
-        Log.d()
+        Log.d("Initialize ")
 
         val newFragment = getInitialFragment()
 
@@ -54,7 +54,7 @@ abstract class BaseFragmentActivity: AppCompatActivity() {
     abstract fun getInitialFragment(): Fragment
 
     fun gotoFragment(newFragment: Fragment, backstack: Boolean) {
-        Log.d()
+        Log.d("Initialize ")
         if (!backstack) {
             supportFragmentManager.popBackStack()
         }

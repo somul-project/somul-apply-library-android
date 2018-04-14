@@ -26,7 +26,7 @@ class PersonalinfoFragment: BaseFragment() {
     private lateinit var mView: View
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        Log.d()
+        Log.d("Initialize ")
         mView = inflater.inflate(
                 R.layout.fragment_personalnfo, container, false)
 
@@ -49,7 +49,7 @@ class PersonalinfoFragment: BaseFragment() {
     }
 
     private fun saveVolunteerInfoAndGoNext() {
-        Log.d()
+        Log.d("Initialize ")
 
         if (saveVolunteer()) {
             mNavigator.gotoSelectLibraryFragment()
@@ -59,13 +59,13 @@ class PersonalinfoFragment: BaseFragment() {
     }
 
     private fun showErrors() {
-        Log.d()
+        Log.d("Initialize ")
 
         Toast.makeText(context, "errors", Toast.LENGTH_LONG)
     }
 
     private fun saveVolunteer(): Boolean {
-        Log.d()
+        Log.d("Initialize ")
         val builder = Volunteer.Builder()
                 .apply {
                     is_speaker = mView.radio_type.checkedRadioButtonId == mView.radio_type_speaker.id

@@ -8,8 +8,8 @@ private const val REAL_METHOD_IDX = 2
 
 
 object Log {
-    fun d() {
-        android.util.Log.d(getFileName(), getPrefix())
+    fun d(message: String) {
+        android.util.Log.d(getFileName(), "${getPrefix()} $message")
     }
 
     private fun getFileName(): String {
